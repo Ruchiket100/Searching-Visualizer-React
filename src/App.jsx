@@ -6,6 +6,7 @@
   level 4 : Visulaize Algorithm 
 */
 import { useState } from "react"
+import Header from "./components/Header"
 
 function App() {
     //Array
@@ -15,11 +16,11 @@ function App() {
     })
     // Algorithm
     const [algo, setAlgo] = useState("binary-search")
+    // Steps
+    const [steps, setSteps] = useState([])
     return (
         <div className="App">
-            <h1>hello from React</h1>
-            we need to create the App, which tells user that I understand the
-            Algorithm and Design principals
+            <Header />
         </div>
     )
 }
